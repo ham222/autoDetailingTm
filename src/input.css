@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card{
+        @apply md:w-2/3  rounded-md transition hover:-translate-y-1 hover:scale-110 duration-300
+        origin-center hover:ease-in overflow-hidden mb-4 md:mb-0 shadow-lg
+    }
+
+    .cardImg{
+        @apply h-64 w-full object-cover sm:h-80 lg:h-96 rounded-t-md hover:scale-125 duration-500
+    }
+
+    .cardText{
+        @apply py-4 text-lg rounded-b-md mx-auto flex flex-col items-center
+    }
+}
+
+html{
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
